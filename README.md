@@ -5,13 +5,13 @@ This is my very own crafted starter kit for simple websites.
 
 ## Install
 
-```git clone https://github.com/hansspiess/hs-starter.git <project-name>
+```git clone https://github.com/hansspiess/hs-starter.git <project-name>```
 
-```cd <project-name>
+```cd <project-name>```
 
-```npm install
+```npm install```
 
-```gulp build
+```gulp build```
 
 ## Changelog
 
