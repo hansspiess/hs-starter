@@ -1,7 +1,7 @@
 Simple Starter Kit for Gulp / Scss / Harmon based Website
 =========================================================
 
-This is my very own crafted starter kit for simple websites.
+This is my starter kit for simple websites.
 
 ## Install
 
@@ -14,6 +14,10 @@ This is my very own crafted starter kit for simple websites.
 ```gulp build```
 
 ## Changelog
+
+### 1.0.1
+
+Restructured scss files as in https://github.com/evernote/sass-build-structure.
 
 ### 1.0.0
 
