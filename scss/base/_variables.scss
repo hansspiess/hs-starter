@@ -1,0 +1,29 @@
+/**
+ * Hero component.
+ * Hero component displays fullscreen banner.
+ *
+ */
+
+
+// LAYOUT SETTINGS //
+
+// Base scale config (base/_harmon.scss)
+$base: 16px;
+
+// Grid
+$grid-columns: 12;
+
+// Breakpoints (needed by grid)
+$max-width: 1280;
+
+
+// LAYOUT //
+
+// Font Families
+$basefont-sans: Helvetica, Arial, sans-serif;
+
+
+// COMPONENT SETTINGS //
+
+// Height of navbar – needed to calculate margin of content beneath.
+$navbar-height-total: 4rem;

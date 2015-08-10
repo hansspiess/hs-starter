@@ -1,0 +1,49 @@
+
+/**
+ * Page Header
+ *
+ * CONTENTS:
+ *
+ * NAVBAR
+ *  ...
+ *
+ */
+
+// NAVBAR //
+
+.navbar {
+
+    position: absolute;
+    z-index: 100;
+
+    // set fixed height according to
+    height: $navbar_height_total;
+    width: 100%;
+
+    background-color: #FFF;
+
+    // inco media logo
+    .brand {
+
+        position: absolute;
+        right: scale(2);
+        top: scale(2);
+
+        &__claim {
+
+            // hide claim for visual (only seo stuff here)
+            display: none;
+
+        }
+
+    }
+
+    > nav {
+
+        position: absolute;
+        left: scale(2);
+        top: scale(2);
+
+    }
+
+}

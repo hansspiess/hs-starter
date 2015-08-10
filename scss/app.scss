@@ -1,44 +1,38 @@
 /**
- * Styles for website
+ * Styles for <project-name>
  *
  * CONTENTS:
  *
- * GLOBALS
- * GENERIC
- * BASE & LAYOUT
+ * BASE
+ * LAYOUT
  * COMPONENTS
- * 
+ *
  */
 
+// m
 
-// GLOBALS //
 
-// Globally-available variables and config.
-@import 'globals/config';
-
-// Useful mixins.
-@import 'globals/mixins';
+// BASE //
 
 // Typographic Scale: https://github.com/nickpfisterer/harmon
-@import 'globals/harmon';
+@import 'base/vendor/harmon';
 
+// https://github.com/ryanburgess/SASS-Useful-Mixins
+@import "base/mixins";
 
-// GENERIC //
+// Setting up config for grid, scale & stuff
+@import "base/variables";
 
-// A level playing field.
-@import 'generic/normalize';
+// https://github.com/necolas/normalize.css
+@import "base/reset";
 
-// Better default `box-sizing`.
-@import 'generic/box-sizing';
-
-
-// BASE & LAYOUT //
-
-// Setting up base styles like generic elements.
+// Basic elements
 @import 'base/base';
 
-// Overall layout.
-@import 'base/layout';
+
+// LAYOUT //
+
+@import "layout/grid";
 
 
 // COMPONENTS //
@@ -51,4 +45,7 @@
 
 // Button elements.
 @import 'components/buttons';
+
+// Navigation elements.
+@import 'components/nav';
 

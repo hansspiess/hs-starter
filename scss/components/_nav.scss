@@ -1,0 +1,51 @@
+
+/**
+ * Navigation Components
+ *
+ * CONTENTS:
+ *
+ * GLOBAL
+ * TOPNAV
+ * FOOTER NAV
+ *
+ */
+
+// GLOBAL //
+
+ul.nav {
+
+    // reset list styles
+    margin: 0;
+    padding: 0;
+    list-style: none;
+
+    // clearfix for container
+    @include clearfix();
+
+    > li {
+
+        // float elements horizontally
+        float: left;
+
+        margin-right: scale(1);
+
+    }
+
+}
+
+
+// TOPNAV //
+
+ul.nav--top {
+
+    position: fixed;
+
+    > li {
+        display: none;
+    }
+
+}
+
+
+// FOOTER NAV //
+

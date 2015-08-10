@@ -6,7 +6,7 @@
 
 @import "harmon/ratios";
 
-$base:  $harmon_base !default;
+$base:  16px !default;
 $ratio: $minor-third !default;
 
 @import "harmon/scale";

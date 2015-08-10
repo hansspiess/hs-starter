@@ -1,6 +1,5 @@
 
-
-// setting 
+// setting the root font size to make harmon work with rem.
 :root {
     font-size: $base;
 }
@@ -11,4 +10,19 @@ body {
 
 h1 {
     font-size: scale(5);
+}
+
+h2 {
+    font-size: scale(4);
+}
+
+a {
+
+    color: #333;
+    text-decoration: none;
+
+    &:hover {
+        color: #999;
+    }
+
 }
