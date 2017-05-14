@@ -1,18 +1,15 @@
-
 // require modules
-var gulp = require('gulp');
 var cleanCss = require('gulp-clean-css');
 var concat = require('gulp-concat');
 var del = require('del');
+var gulp = require('gulp');
+var rename = require("gulp-rename");
 var sass = require('gulp-sass');
 var sourcemaps = require('gulp-sourcemaps');
-var rename = require("gulp-rename");
-
-//gulp-minify-css -> gulp-clean-css
+var uglify = require('gulp-uglify');
 
 // setup config vars
 var buildDir = './dist';
-
 
 // delete files inside /css folder
 gulp.task('clean', function() {
@@ -25,6 +22,15 @@ gulp.task('clean', function() {
 gulp.task('scripts', function() {
   gulp.src(['js/*.js'])
     .pipe(concat('app.js'))
+    .pipe(gulp.dest(buildDir + '/js'));
+});
+
+//  minify scripts
+gulp.task('minify-scripts', function() {
+  gulp.src(['js/*.js'])
+    .pipe(concat('app.js'))
+    .pipe(uglify())
+    .pipe(rename({ suffix: '.min' }))
     .pipe(gulp.dest(buildDir + '/js'));
 });
 
@@ -46,7 +52,7 @@ gulp.task('watch',function() {
 });
 
 // minify css
-gulp.task('minify-css', function() {
+gulp.task('minify-styles', function() {
   gulp.src(buildDir + '/css/app.css')
     .pipe(cleanCss({compatibility: 'ie8'}))
 		.pipe(rename({
@@ -62,5 +68,5 @@ gulp.task('minify-css', function() {
 gulp.task('default', ['watch']);
 
 // build 
-gulp.task('build', ['clean','scripts','styles','minify-css']);
+gulp.task('build', ['clean','scripts','minify-scripts','styles','minify-styles']);
 

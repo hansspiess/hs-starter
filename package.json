@@ -1,6 +1,6 @@
 {
   "name": "hs-starter",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -22,6 +22,7 @@
     "gulp-concat": "^2.6.1",
     "gulp-rename": "^1.2.2",
     "gulp-sass": "^2.3.2",
-    "gulp-sourcemaps": "^1.12.0"
+    "gulp-sourcemaps": "^1.12.0",
+    "gulp-uglify": "^2.1.2"
   }
 }
