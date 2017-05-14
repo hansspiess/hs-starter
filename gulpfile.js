@@ -1,12 +1,14 @@
 
 // require modules
 var gulp = require('gulp');
+var cleanCss = require('gulp-clean-css');
 var concat = require('gulp-concat');
 var del = require('del');
 var sass = require('gulp-sass');
 var sourcemaps = require('gulp-sourcemaps');
-var minifyCss = require('gulp-minify-css');
 var rename = require("gulp-rename");
+
+//gulp-minify-css -> gulp-clean-css
 
 // setup config vars
 var buildDir = './dist';
@@ -46,7 +48,7 @@ gulp.task('watch',function() {
 // minify css
 gulp.task('minify-css', function() {
   gulp.src(buildDir + '/css/app.css')
-    .pipe(minifyCss({compatibility: 'ie8'}))
+    .pipe(cleanCss({compatibility: 'ie8'}))
 		.pipe(rename({
 			suffix: ".min"
 		}))
