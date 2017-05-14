@@ -15,6 +15,11 @@ This is my starter kit for simple websites.
 
 ## Changelog
 
+### 1.0.2
+
+Updated devDependendies.
+Added uglify-js to gulp chain.
+
 ### 1.0.1
 
 Restructured scss files as in https://github.com/evernote/sass-build-structure.
